@@ -1,0 +1,2 @@
+# COVERAGE-CAPACITY-OPTIMIZATION-IN-OPEN-RAN
+Code used for our ICASSP 2021 submission on CCO for ORAN
