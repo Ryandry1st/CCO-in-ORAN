@@ -1,0 +1,17 @@
+This directory contains simulation data and Python code for the ICASSP 2021 paper submission entitled 'Coverage and Capacity Optimization in Open RAN'.
+
+The simulated data is produced using QuaDRiGa (a MATLAB module) and is contained in the data sub-directory.
+
+The following Python code files are provided : 
+run.py
+simulation.py
+simulated_rsrp.py
+problem_formulation.py
+algorithms.py
+
+In addition, a sample JSON file cco_noop.json is provided, in order to demonstrate how this framework may be invoked on the command line.
+
+To run, first change to the directory containing these files : 
+   ./run.py cco_noop.json
+
+The provided code demonstrates how the data may be read, as well as the assumptions about the data, and the outer-loop stub code. No actual implementation of the two algorithms tried in the paper (Bayesian Optimization or DDPG) is provided. Reviewers are welcome to play with the given code, modify it and implement the stub to try out different approaches.

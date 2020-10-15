@@ -1,0 +1,26 @@
+{
+    "run_module": ".",
+    "simulation": {
+        "module":"simulation",
+        "classname":"CCOSimulation",
+        "epochs": 500
+    },
+    "simulated_rsrp":{
+        "path":"data/power_maps/*.npz",
+        "power_range": [30, 50]
+    },
+    "problem_formulation":{
+        "module":"problem_formulation",
+        "classname": "CCORasterBlanketFormulation",
+        "parameters":{
+            "lambda_weight": 0.9,
+            "weak_coverage_threshold": -80
+        }
+    },
+    "algorithm":{
+        "module":"algorithms",
+        "classname":"CCOAlgorithm",
+        "parameters":{
+        }
+    }
+}
